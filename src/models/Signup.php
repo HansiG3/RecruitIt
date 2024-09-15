@@ -11,8 +11,8 @@
         public function insertUser() {
             $connection = parent::connect();
             $hash = password_hash($this->password, PASSWORD_DEFAULT);
-            $query = "INSERT INTO users (username, password) VALUES
-            ('{$this->username}', '{$hash}');";
+            $query = "INSERT INTO employee (username, password, email, name, contact, role) VALUES
+            ('{$this->username}', '{$hash}', 'testing@fake.in', 'Kartik Agrawal', 9988776655, 'Designer');";
             try {
                 mysqli_query($connection, $query);
             }
