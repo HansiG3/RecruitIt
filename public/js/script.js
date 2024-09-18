@@ -1,26 +1,4 @@
-function validateUsername() {
-    let username = document.getElementById("username");
-    return true;
-}
-
-function validatePassword() {
-    let password = document.getElementById("password");
-    if(password.length < 5) {
-        console.log("Password is too short");
-        document.getElementById("result").innerHTML = "Password is too short";
-        return false;
-    }
-    return true;
-}
-
-function validateLogin() {
-    validateUsername();
-    validatePassword(); 
-    return true;
-}
-
+//make sure to create functions for everything and then simply call them
 function validateSignup() {
-    validateUsername();
-    validatePassword();
-    return true; 
+    
 }
