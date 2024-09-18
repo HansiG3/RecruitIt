@@ -8,5 +8,6 @@
 
         $signup = new Signup($username, $password);
         $signup->insertUser();
+        header("Location: ../views/home.html");
     }
 ?>
