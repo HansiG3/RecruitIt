@@ -4,9 +4,9 @@
         $password = $_POST["password"];
 
         require_once "../../config/Database.php";
-        require_once "../models/Signup.php";
+        require_once "../models/User.php";
 
-        $login = new Login($username, $password);
+        $login = new User($username, NULL, $password, NULL, NULL);
         $login->searchUser();
         header("Location: ../views/home.html");
     }
