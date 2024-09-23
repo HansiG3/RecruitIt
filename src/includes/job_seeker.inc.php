@@ -13,7 +13,8 @@
 		}
 
 		$job_seeker = new Job_Seeker($user_id, $experience, $skills);
-		$job_seeker->insertJob_Seeker();
+		$job_seeker_id = $job_seeker->insertJob_Seeker();
+		$_SESSION["job_seeker_id"] = $job_seeker_id;
 		header("Location: ../views/home.html");
 		exit();
 	}

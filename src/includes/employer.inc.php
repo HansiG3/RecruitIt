@@ -14,7 +14,8 @@
 		}
 
 		$employer = new Employer($user_id, $company_name, $industry, $location);
-		$employer->insertEmployer();
+		$employer_id = $employer->insertEmployer();
+		$_SESSION["employer_id"] = $employer_id;
 		header("Location: ../views/home.html");
 		exit();
 	}

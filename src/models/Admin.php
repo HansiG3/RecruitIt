@@ -10,7 +10,7 @@
             $this->password = $password;
         }
 
-        public function insertUser() {
+        public function insertAdmin() {
             $connection = parent::connect();
             $hash = password_hash($this->password, PASSWORD_DEFAULT);
             $query = "INSERT INTO admin (username, email, password) VALUES
@@ -23,5 +23,5 @@
             }
             mysqli_close($connection);
         }
-    }
+    };
 ?>

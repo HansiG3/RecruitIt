@@ -16,11 +16,13 @@
 			('{$this->user_id}', '{$this->experience}', '{$this->skills}');";
 			try {
                 mysqli_query($connection, $query);
+				$job_seeker_id = mysqli_insert_id($connection);
             }
             catch(mysqli_sql_exception $e) {
                 die("Registration Failed!" . $e->getMessage());
             }            
             mysqli_close($connection);
+			return $job_seeker_id;
 		}
-	}
+	};
 ?>

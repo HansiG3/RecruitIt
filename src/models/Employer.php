@@ -18,11 +18,13 @@
 			('{$this->user_id}', '{$this->company_name}', '{$this->industry}', '{$this->location}');";
 			try {
                 mysqli_query($connection, $query);
+                $employer_id = mysqli_insert_id($connection);
             }
             catch(mysqli_sql_exception $e) {
                 die("Registration Failed!" . $e->getMessage());
             }            
             mysqli_close($connection);
+			return $employer_id;
 		}
-	}
+	};
 ?>
