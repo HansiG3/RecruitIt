@@ -10,20 +10,27 @@
 <body>
     <div class="container">
         <div class="one">
-            <img src="job_portal_about.svg">
+            <h1>RecruitIt</h1>
+            <h2>-Find Your Future Today</h2>
+            <img src="../../public/images/signupimage.webp">
         </div>
         <div class="two">
+            <h1>Sign Up</h1>
             <form action="" onsubmit="return(validateSignup())">
-                <label for="name"></label>
-                    Name:<input type="text" name="name" id="name" placeholder="Enter Full Name"><br>
-                <label for="pwd"></label>
-                    Password:<input type="password" name="pwd" id="pwd" placeholder="Password Of 6 Characters Or More"><br>
-                <label for="email"></label>
-                    Email:<input type="email" name="email" id="email" placeholder="someone@gmail.com"><br>
-                <label for="contact"></label>
-                    Contact:<input type="number" name="contact" id="contact"placeholder="Enter Your Contact Number"><br>
-                <label for="signup"></label>
-                    <button type="submit" name="signup" id="signup">Sign Up</button>
+                <label for="name">Name:</label>
+                    <input type="text" name="name" id="name"><br>
+                    <p id="forname"></p>
+                <label for="pwd">Password:</label>
+                    <input type="password" name="pwd" id="pwd"><br>
+                    <p id="forpwd"></p>
+                <label for="email">Email:</label>
+                    <input type="email" name="email" id="email"><br>
+                    <p id="foremail"></p>
+                <label for="contact">Contact:</label>
+                    <input type="number" name="contact" id="contact"><br>
+                    <p id="forcontact"></p>
+                <label for="next"></label>
+                    <button type="submit" name="next" id="next">Next</button>
             </form>
         </div>
     </div>
