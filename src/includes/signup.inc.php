@@ -4,14 +4,13 @@
         $username = $_POST["username"];
         $password = $_POST["password"];
         $email = $_POST["email"];
-        $name = $_POST["name"];
         $contact = $_POST["contact"];
         $role = $_POST["role"];
 
         require_once "../../config/Database.php";
         require_once "../models/User.php";
         
-        $signup = new User($username, $password, $email, $name, $contact, $role);
+        $signup = new User($username, $password, $email, $contact, $role);
         $user_id = $signup->insertUser();
         $_SESSION["user_id"] = $user_id;
         if($role == "employer") {

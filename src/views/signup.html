@@ -3,44 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecruitIt</title>
+    <meta name="description" content="This is the signup page">
+    <title>Recruit-It.</title>
     <script src="../../public/js/script.js"></script>
     <link rel="stylesheet" href="../../public/css/signup.css">
+    <link rel="stylesheet" href="../../public/css/font.css">
 </head>
 <body>
-    <div class="main">
-    <div class="container">
-        <div class="one">
-            <h4>Recruit-It</h4>
-            <h1><b>Start your</b></h1>
-            <h1><b>journey with us.</b></h1>
-            <p>Platform is designed to make recruitment faster, smarter, and more effective.</p>
+    <div class="main noto-sans-warang-citi-regular apply_flex_evenly">
+
+        <div class="container">
+
+            <div class="one">
+                
+                <div class="text-content">
+                    <h4>Recruit-It.</h4>
+                    <h1>Start your journey with us.</h1>
+                    <p>Platform is designed to make recruitment faster, smarter, and more effective.</p>
+                </div>
+
+                <div class="slideshow">
+                    <p class="feedback">Simply unbelievable! I am really satisfied with my projects and business. This is Absolutly wonderful</p>
+                    <div class="person">
+                        <img src="../../public/images/profile.png" alt="profile" class="profile">
+                        <div class="name_work">
+                            <p class="feedback">Kartik A.</p>
+                            <p class="feedback">Committed</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="two">
+                
+                <div class="heading">
+                    <h1>Create Account.</h1><br>
+                    <h6>Have an account?<a href="login.html">&nbsp;Log In.</a></h6>
+                </div>
+
+                <div class="form">
+                    
+                    <form action="../includes/signup.inc.php" onsubmit="return validateSignup()">
+
+                        <label for="role">Role:</label>
+                        <div class="forRole">
+                            <div class="option">
+                                <input type="radio" name="role" id="job_seeker">
+                                <span>Job Seeker</span>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="role" id="employer">
+                                <span>Employer</span>
+                            </div>
+                            <p id="forrole"></p>
+                        </div>
+
+                        
+                        <div class="forName">
+                            <label for="username">Name:</label><br>
+                            <input type="text" name="username" id="username" placeholder="Full Name" class="inputs">
+                            <p id="forname"></p>
+                        </div>
+                        
+                        <div class="forPassword">
+                            <label for="password">Password:</label><br>
+                            <input type="password" name="password" id="password" placeholder="Password" class="inputs">
+                            <p id="forpassword"></p>
+                        </div>
+                        
+                        <div class="forEmail">
+                            <label for="email">Email:</label><br>
+                            <input type="email" name="email" id="email" placeholder="Email" class="inputs">
+                            <p id="foremail"></p>
+                        </div>
+                        
+                        <div class="forRole">
+                            <div class="forGoogle goo_sub">
+                                <span>Sign Up using Google</span>
+                            </div>
+                            <div class="forSubmit goo_sub">
+                                <input type="submit" value="Next" class="submit">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="two">
-            <h2>Sign Up</h2>
-            <h6>Have an account?<a href="">Log In</a></h6>
-            <form action="" onsubmit="return(validateSignup())">
-                <div class="forName">
-                <label for="name">Name:</label><br>
-                    <input type="text" name="name" id="name">
-                    <p id="forname"></p></div>
-                <div class="forPwd">
-                <label for="pwd">Password:</label><br>
-                    <input type="password" name="pwd" id="pwd">
-                    <p id="forpwd"></p></div>
-                <div class="forEmail">
-                <label for="email">Email:</label><br>
-                    <input type="email" name="email" id="email">
-                    <p id="foremail"></p></div>
-                <div class="forContact">
-                <label for="contact">Contact:</label><br>
-                    <input type="number" name="contact" id="contact">
-                    <p id="forcontact"></p></div>
-                <label for="next"></label>
-                    <button type="submit" name="next" id="next">Next</button>
-            </form>
-        </div>
-    </div>
+
     </div>
 </body>
 </html>
