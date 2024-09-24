@@ -9,9 +9,10 @@ function validateSignup() {
     let contact=document.getElementById("contact").value;
     let contact_error=document.getElementById("forcontact");
     let isvalid=true;
+    name_error.style.diplay="none";
     if(name.trim()===""){
         name_error.innerHTML="Name must not be empty";
-        isvalid=false;
+        return false;
     }
     const specialChars = "!@#$%^&*()_+[]{}|;:',.<>?/`~";
     let count=0;
@@ -29,19 +30,19 @@ function validateSignup() {
     }
     if(passerror!=""){
         pass_error.innerHTML=passerror;
-        isvalid=false;
+        return false;
     }
     
     const emailPattern = /\S+@\S+\.\S+/;
 
     if (!emailPattern.test(email)) {
         email_error.innerHTML="Please Enter A Valid Email";
-        isvalid=false;
+        return false;
     }
     if(contact.length!=0){
         if(contact.length!=10){
             contact_error.innerHTML="Contact Number Must Be Of 10 Digits";
-            isvalid=false;
+            return false;
         }
     }
     return isvalid;
