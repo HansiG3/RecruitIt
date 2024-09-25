@@ -14,7 +14,6 @@ create table user (
     username varchar(100),
     email varchar(100) unique,
     password varchar(255),
-    contact_info varchar(255),
     role enum("job_seeker", "employer")
 );
 

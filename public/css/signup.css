@@ -10,6 +10,7 @@
     --dark_blue_color: darkblue;
     --black_color: black;
     --gray_color: gray;
+    --red_color: red;
 }
 
 .apply_flex_evenly {
@@ -94,6 +95,11 @@
 .profile {
     width: 40px;
     height: 40px;
+    border-radius: 5px;
+}
+
+.name_work {
+    margin-left: 5%;
 }
 
 .two {
@@ -106,7 +112,7 @@
 }
 
 .heading {
-    height: 13vh;
+    height: 12vh;
 }
 
 .heading h1 {
@@ -116,7 +122,7 @@
 }
 
 .form {
-    height: 62vh;
+    height: 65vh;
     font-weight: bold;
 }
 
@@ -133,7 +139,7 @@ a {
 
 .forRole .option {
     margin-top: 5px;
-    width: 45%;
+    width: 48%;
     padding: 10px;
     display: flex;
     font-size: 10px;
@@ -149,6 +155,15 @@ a {
     color: var(--gray_color);
 }
 
+.error {
+    margin-top: -3%;
+    margin-bottom: 2%;
+    width: 100%;
+    height: 10px;
+    color: var(--red_color);
+    font-size: 8px;
+}
+
 .two label {
     font-size: 12px;
     color: var(--black_color);
@@ -162,17 +177,18 @@ a {
     border: 1px solid var(--black_color);
     font-weight: bold;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 11px;
     background-color: var(--white_color);
 }
 
 .forRole .goo_sub {
     margin-top: 5px;
-    width: 45%;
+    width: 48%;
     display: flex;
     font-size: 10px;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
 }
 
 .forGoogle {
@@ -180,6 +196,11 @@ a {
     border-radius: 5px;
     padding: 0px;
     color: var(--gray_color);
+}
+
+.google_logo {
+    width: 35px;
+    height: 35px;
 }
 
 .submit {

@@ -26,7 +26,7 @@ Recruit-It is a web-based job portal that connects job seekers with potential em
 - **User Authentication:** Registration, login, and account management for both job seekers and employers.
 - **Job Listings:** Employers can post, edit, and delete listings; job seekers can search and apply.
 - **Application Management:** Job seekers manage their applications, while employers handle candidate applications.
-- **Profile Management:** Users can update personal information, resumes, contact details, and skills.
+- **Profile Management:** Users can update personal information, resumes and skills.
 - **Search and Filter:** Jobs can be searched and filtered based on location, job type, salary, and more.
 - **Notifications:** Users receive updates on job statuses and application responses.
 
@@ -40,7 +40,7 @@ Recruit-It is a web-based job portal that connects job seekers with potential em
 ### Database Design
 
 - **Entities:**
-  - Users (UserID, Name, Email, Role, ContactInfo)
+  - Users (UserID, Name, Email, Role)
   - Job Seekers (UserID, Resume, Skills, Experience)
   - Employers (UserID, CompanyName, Industry, Location)
   - Job Listings (JobID, EmployerID, Title, Description, Location, Salary, JobType, PostingDate)
