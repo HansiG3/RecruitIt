@@ -22,7 +22,7 @@
 .apply_flex_between {
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .main {
@@ -33,7 +33,7 @@
 
 .container {
     display: flex;
-    width: 55vw; 
+    width: 55vw;
     height: 85vh;
     border-radius: 10px;
     background-color: var(--white_color);

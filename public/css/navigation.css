@@ -23,7 +23,7 @@ html {
 .apply_flex_between {
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .navigation {
