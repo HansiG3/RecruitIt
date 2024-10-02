@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --margin-value: 5px;
+    --border-value: 10px;
+}
+
+.apply_flex_between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box {
+    border-radius: var(--border-value);
+    margin: var(--margin-value);
+    width: 350px;
+    height: 400px;
+    border: 1px solid gray;
+    background-color: aqua;
+}
+
+.main_area {
+    border-radius: var(--border-value);
+    margin: var(--margin-value);
+    background-color: beige;
+}
+
+.date_bookmark {
+    border-radius: var(--border-value);
+    margin: var(--margin-value);
+}
+
+.date_bookmark div {
+    background-color: white;
+    border: 1px solid white;
+    
+}
