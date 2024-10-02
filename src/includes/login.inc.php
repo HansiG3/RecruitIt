@@ -9,6 +9,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $login = new User($username, null, $password, null, null);
     $login->searchUser();
     header("Location: ../views/home.html");
+    exit();
 }
-
 ?>

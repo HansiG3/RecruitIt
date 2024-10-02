@@ -43,11 +43,9 @@
                 </div>
 
                 <div class="two">
-                        <?php 
-                        if(isset($formFile)) { 
-                            include $formFile; 
-                        } 
-                        ?>
+                    <?php if (isset($formFile)) {
+                        include $formFile;
+                    } ?>
                 </div>
             </div>
         </div>
