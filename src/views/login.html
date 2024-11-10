@@ -13,39 +13,17 @@
         method="post"
         onsubmit="return(validateSignup())"
     >
-        <label for="role">Role:</label>
-        <div class="forRole">
-            <label class="option">
-                <input
-                    type="radio"
-                    name="role"
-                    id="job_seeker"
-                    value="job_seeker"
-                />
-                <span>Job Seeker</span>
-            </label>
-            <label class="option">
-                <input
-                    type="radio"
-                    name="role"
-                    id="employer"
-                    value="employer"
-                />
-                <span>Employer</span>
-            </label>
-        </div>
-        <p class="error" id="forrole"></p>
-
-        <div class="forName">
-            <label for="username">Name:</label><br />
+    
+        <div class="forEmail">
+            <label for="email">Email:</label><br />
             <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Full Name"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
                 class="inputs"
             />
-            <p class="error" id="forname"></p>
+            <p class="error" id="foremail"></p>
         </div>
 
         <div class="forPassword">
@@ -58,18 +36,6 @@
                 class="inputs"
             />
             <p class="error" id="forpassword"></p>
-        </div>
-
-        <div class="forEmail">
-            <label for="email">Email:</label><br />
-            <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                class="inputs"
-            />
-            <p class="error" id="foremail"></p>
         </div>
 
         <div class="forRole">
