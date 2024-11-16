@@ -1,11 +1,34 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Recruit-It.</title>
-    </head>
-    <body>
-        <p>This is page is for job_seeker login.</p>
-    </body>
-</html>
+<div class="heading">
+    <h1>Tell us about yourself</h1>
+    <br />
+    <h6>Have an account?<a href="../../index.php">&nbsp;Log In.</a></h6>
+</div>
+<div class="form">
+    <form
+        action="../includes/job_seeker.inc.php"
+        method="post"
+        onsubmit="return(validateJobSeeker())"
+    >
+
+        <div class="forExperience">
+            <label for="experience">Experience:</label><br>
+            <input type="number" name="experience" id="experience" placeholder="Experience" class="inputs">
+            <p class="error" id="forexperience"></p>
+        </div>
+
+        <div class="forSkills">
+            <label for="skills">Skills:</label><br />
+            <input type="text" id="skills" placeholder="Add a skill and press Enter" class="inputs" />
+            <div id="skills-container" class="skills-container"></div>
+            <input type="hidden" name="skills" id="hidden-skills" />
+            <p class="error" id="forskills"></p>
+        </div>
+        
+
+        <div class="forRole">
+            <div class="forSubmit goo_sub">
+                <input type="submit" value="Next" class="submit"/>
+            </div>
+        </div>
+    </form>
+</div>

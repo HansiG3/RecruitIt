@@ -14,16 +14,34 @@ class Job_Seeker extends User
 
     public function insertJob_Seeker()
     {
-        $connection = parent::connect();
-        $query = "INSERT INTO job_seeker (user_id, experience, skills) VALUES
-			('{$this->user_id}', '{$this->experience}', '{$this->skills}');";
-        try {
-            mysqli_query($connection, $query);
-            $job_seeker_id = mysqli_insert_id($connection);
-        } catch (mysqli_sql_exception $e) {
-            die("Registration Failed!" . $e->getMessage());
+        if (count($this->skills) !== 5) {
+            throw new Exception("Exactly 5 skills are required.");
         }
-        mysqli_close($connection);
+
+        $connection = parent::connect();
+        $query = "INSERT INTO job_seeker (user_id, experience, skill1, skill2, skill3, skill4, skill5) 
+                  VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $stmt = $connection->prepare($query);
+
+        try {
+            $stmt->bind_param(
+                "iisssss",
+                $this->user_id,
+                $this->experience,
+                $this->skills[0],
+                $this->skills[1],
+                $this->skills[2],
+                $this->skills[3],
+                $this->skills[4]
+            );
+            $stmt->execute();
+            $job_seeker_id = $stmt->insert_id;
+        } catch (Exception $e) {
+            die("Error: " . $e->getMessage());
+        }
+
+        $stmt->close();
+        $connection->close();
         return $job_seeker_id;
     }
 }

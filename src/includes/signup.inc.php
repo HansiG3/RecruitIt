@@ -13,9 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $user_id = $signup->insertUser();
     $_SESSION["user_id"] = $user_id;
     if ($role == "employer") {
-        header("Location: ../views/employer.html");
+        header("Location: ../controllers/employer.php");
     } else {
-        header("Location: ../views/job_seeker.html");
+        header("Location: ../controllers/job_seeker.php");
     }
     exit();
 }

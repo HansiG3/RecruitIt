@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../../public/css/first.css" />
         <link rel="stylesheet" href="../../public/css/font.css" />
         <script src="../../public/js/validate.js"></script>
+        <script src="../../public/js/job_seeker.js"></script>
     </head>
     <body>
         <div class="main noto-sans-warang-citi-regular apply_flex_evenly">

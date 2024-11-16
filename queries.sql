@@ -29,8 +29,12 @@ create table employer (
 create table job_seeker (
 	job_seeker_id int primary key auto_increment,
     user_id int,
-    experience varchar(255),
-    skills text,
+    experience int,
+    skill1 varchar(100),
+    skill2 varchar(100),
+    skill3 varchar(100),
+    skill4 varchar(100),
+    skill5 varchar(100),
     foreign key(user_id) references user(user_id)
 );
 
