@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray_color: darkslategray;
+    --black_color: black;
+    --white-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.apply_flex_evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.apply_flex_between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    width: 100%;
+    height: 50px;
+    font-size: 13px;
+    z-index: 1;
+    position: fixed;
+}
+
+.logo_title_links {
+    font-weight: bolder;
+    width: 65%;
+    height: 100%;
+}
+
+.logo_title {
+    width: 20%;
+    height: 100%;
+    font-size: 15px;
+}
+
+.links {
+    width: 75%;
+    height: 100%;
+}
+
+.links div {
+    width: 20%;
+    height: 100%;
+}
+
+.links .faq {
+    width: 15%;
+}
+
+.links div a {
+    width: 100%;
+    height: 100%;
+    color: var(--gray_color);
+    border-top: 2px solid var(--background_color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray_color);
+}
+
+.links div a:hover {
+    color: var(--black_color);
+    border-top: 2px solid var(--black_color);
+}
+
+.other {
+    width: 20%;
+    height: 100%;
+}
+
+.bell_icon {
+    width: 22px;
+    height: 22px;
+}
+
+.name #full_name {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.name #job_title {
+    margin-top: 2px;
+    font-size: 12px;
+    color: var(--gray_color);
+}
+
+.profile_picture {
+    width: 40px;
+    height: 40px;
+}
+
+/* media query for width < 770px */
+@media (max-width: 770px) {
+    .navigation {
+        font-size: 11px;
+    }
+
+    .logo_title_links {
+        width: 80%;
+    }
+
+    .logo_title {
+        width: 17%;
+        font-size: 13px;
+    }
+
+    .other {
+        width: 15%;
+    }
+
+    .bell_icon {
+        width: 19px;
+        height: 19px;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .profile_picture {
+        width: 32.5px;
+        height: 32.5px;
+    }
+}

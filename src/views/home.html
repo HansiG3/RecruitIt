@@ -1,11 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Job Listing UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(209, 232, 255);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(0, 25, 87);
+            color: #fff;
+        }
+
+        .header .logo {
+            font-size: 24px;
+        }
+
+        .header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .header nav ul li {
+            margin: 0 15px;
+        }
+
+        .header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .header .location {
+            font-size: 16px;
+        }
+
+        .header .profile-pic {
+            width: 40px;
+            height: 40px;
+            background-color: #ccc;
+            border-radius: 50%;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .filters {
+            width: 20%;
+            padding: 20px;
+            background-color: #F9FAFB;
+            border-radius: 16px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin-right: 20px;
+        }
+
+        .filters h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #111827;
+        }
+
+        .filter-group {
+            margin-bottom: 24px;
+        }
+
+        .filter-group label {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            display: block;
+            color: #6B7280;
+        }
+
+        .filter-group input {
+            margin-right: 10px;
+            accent-color: rgb(0, 25, 87);
+        }
+
+        .getlucky {
+            height: 150px;
+            width: 100%;
+            background-color: rgb(0, 25, 87);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .getlucky p {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 0 10px;
+        }
+
+        .job-listings {
+            width: 75%;
+        }
+
+        .job-listings h2 {
+            margin-bottom: 20px;
+        }
+
+        .job-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .job-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-card .job-date {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .job-card h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .job-card p {
+            margin-bottom: 15px;
+        }
+
+        .job-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .job-card button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .job-card button:hover {
+            background-color: rgb(0, 25, 87);
+        }
+
+        .icon {
+            margin-left: 10px;
+            width: 35px;
+        }
+
+        .rightend {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+
+            /* For tablets and smaller laptops */
+            .container {
+                flex-direction: column;
+            }
+
+            .filters {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .job-listings {
+                width: 100%;
+            }
+
+            .job-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            /* For iPhone and smaller screens */
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header nav ul {
+                flex-direction: column;
+                margin: 10px 0;
+            }
+
+            .header nav ul li {
+                margin: 5px 0;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .filters {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .job-listings {
+                width: 100%;
+            }
+
+            .job-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .job-card {
+                padding: 15px;
+            }
+
+            .job-card h3 {
+                font-size: 16px;
+            }
+
+            .job-card .job-date {
+                font-size: 12px;
+            }
+
+            .getlucky {
+                height: 100px;
+            }
+
+            .getlucky p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <p>Welcome to the home page</p>
+    <div class="header">
+        <div class="logo">Recruit-It</div>
+        <nav>
+            <ul>
+                <li><a href="#">Find Jobs</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Hiring</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="location">Noida, India</div>
+        <div class="rightend">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/428/428933.png">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/4873/4873245.png">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/16209/16209618.png">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="filters">
+            <div class="getlucky">
+                <p>Get your desired career with Recruit It.</p>
+            </div>
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <label>Working schedule:</label><br>
+                <input type="checkbox"> Full time<br>
+                <input type="checkbox"> Part time<br>
+                <input type="checkbox"> Internship<br>
+                <input type="checkbox"> Project work<br>
+                <input type="checkbox"> Volunteering
+            </div>
+            <div class="filter-group">
+                <label>Employment type:</label><br>
+                <input type="checkbox"> Full day<br>
+                <input type="checkbox"> Flexible schedule<br>
+                <input type="checkbox"> Shift work<br>
+                <input type="checkbox"> Distant work<br>
+                <input type="checkbox"> Shift method
+            </div>
+        </div>
+
+        <div class="job-listings">
+            <h2>Recommended Jobs</h2>
+            <div class="job-cards">
+                <div class="job-card">
+                    <div class="job-date">20 May, 2023</div>
+                    <h3 class="role">Senior UI/UX Designer</h3>
+                    <p>Amazon</p>
+                    <div class="job-details">
+                        <span class="payperhr">$250/hr</span>
+                        <span class="location">San Francisco, CA</span>
+                    </div>
+                    <button>Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

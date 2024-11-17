@@ -1,0 +1,54 @@
+<div class="heading">
+    <h1>Login to your account.</h1>
+    <br />
+    <h6>
+        Don't have an account?<a href="../controllers/signup.php"
+            >&nbsp;Sign Up.</a
+        >
+    </h6>
+</div>
+<div class="form">
+    <form
+        action="../includes/login.inc.php"
+        method="post"
+        onsubmit="return(validateSignup())"
+    >
+        <div class="forEmail">
+            <label for="email">Email:</label><br />
+            <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="inputs"
+            />
+            <p class="error" id="foremail"></p>
+        </div>
+
+        <div class="forPassword">
+            <label for="password">Password:</label><br />
+            <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                class="inputs"
+            />
+            <p class="error" id="forpassword"></p>
+        </div>
+
+        <div class="forRole">
+            <div class="forGoogle goo_sub">
+                <img
+                    src="../../public/images/google_logo.png"
+                    alt="google_logo"
+                    class="google_logo"
+                />
+                <span>Sign Up using Google</span>
+            </div>
+            <div class="forSubmit goo_sub">
+                <input type="submit" value="Next" class="submit" />
+            </div>
+        </div>
+    </form>
+</div>
