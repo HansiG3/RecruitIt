@@ -9,25 +9,34 @@
         method="post"
         onsubmit="return(validateJobSeeker())"
     >
-
         <div class="forExperience">
-            <label for="experience">Experience:</label><br>
-            <input type="number" name="experience" id="experience" placeholder="Experience" class="inputs">
+            <label for="experience">Experience:</label><br />
+            <input
+                type="number"
+                name="experience"
+                id="experience"
+                placeholder="Experience"
+                class="inputs"
+            />
             <p class="error" id="forexperience"></p>
         </div>
 
         <div class="forSkills">
             <label for="skills">Skills:</label><br />
-            <input type="text" id="skills" placeholder="Add a skill and press Enter" class="inputs" />
+            <input
+                type="text"
+                id="skills"
+                placeholder="Add a skill and press Enter"
+                class="inputs"
+            />
             <div id="skills-container" class="skills-container"></div>
             <input type="hidden" name="skills" id="hidden-skills" />
             <p class="error" id="forskills"></p>
         </div>
-        
 
         <div class="forRole">
             <div class="forSubmit goo_sub">
-                <input type="submit" value="Next" class="submit"/>
+                <input type="submit" value="Next" class="submit" />
             </div>
         </div>
     </form>

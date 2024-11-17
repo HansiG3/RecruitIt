@@ -19,7 +19,7 @@ class Job_Seeker extends User
         }
 
         $connection = parent::connect();
-        $query = "INSERT INTO job_seeker (user_id, experience, skill1, skill2, skill3, skill4, skill5) 
+        $query = "INSERT INTO job_seeker (user_id, experience, skill1, skill2, skill3, skill4, skill5)
                   VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = $connection->prepare($query);
 
