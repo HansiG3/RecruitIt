@@ -1,0 +1,97 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainbody {
+	background-color: rgb(209, 232, 255);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar {
+	width: 100%;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	color: rgb(248, 243, 234);
+	background-color: rgb(0, 25, 87);
+	text-align: left;
+	font-size: medium;
+}
+
+.icon {
+	width: 20px;
+}
+
+.left a {
+	text-decoration: none;
+	color: rgb(248, 243, 234);
+	margin-left: 60px;
+}
+
+.left a:hover {
+	color: rgb(248, 243, 234);
+	transform: scale(1.1);
+	transition: transform 1s ease, color 1s ease;
+}
+
+.right img {
+	margin-left: 10px;
+}
+
+.rightest img {
+	margin-right: 10px;
+}
+
+.rightest {
+	margin-right: 10px;
+}
+
+.logochild {
+	font-size: large;
+}
+
+/* Adjusted Form Container */
+.form-container {
+	background-color: rgb(255, 255, 255);
+	padding: 20px 30px; /* Increased padding */
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	width: 400px;
+}
+
+.form-container h2 {
+	margin-bottom: 20px;
+	color: rgb(0, 25, 87);
+	text-align: center;
+}
+
+/* Ensure consistent widths */
+.form-container input,
+.form-container textarea,
+.form-container select,
+.form-container button {
+	width: calc(100% - 20px); /* Account for padding */
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.form-container button {
+	background-color: rgb(0, 25, 87);
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.form-container button:hover {
+	background-color: rgb(34, 47, 93);
+}

@@ -9,29 +9,39 @@
         method="post"
         onsubmit="return(validateSignup())"
     >
-        <div class="forEmail">
-            <label for="email">Email:</label><br />
+        <div class="forCompany">
+            <label for="company">Company:</label><br />
             <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
+                type="text"
+                name="company"
+                id="company"
+                placeholder="Company Name"
                 class="inputs"
             />
-            <p class="error" id="foremail"></p>
+            <p class="error" id="forcompany"></p>
         </div>
 
-        <div class="forPassword">
-            <label for="password">Password:</label><br />
-            <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Password"
+        <div class="forIndustry">
+            <label for="industry">Industry:</label><br />
+            <input type="text"
+                type="text"
+                name="industry"
+                id="industry"
+                placeholder="Industry Name"
                 class="inputs"
             />
-            <p class="error" id="forpassword"></p>
         </div>
+
+        <div class="forLocation">
+            <label for="location">Location:</label><br />
+            <input
+                type="text"
+                name="location"
+                id="location"
+                placeholder="Location"
+                class="inputs"
+            />
+            <p class="error" id="forlocation"></p>
 
         <div class="forRole">
             <div class="forGoogle goo_sub">
