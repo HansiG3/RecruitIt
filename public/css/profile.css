@@ -3,3 +3,174 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(209, 232, 255);
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(248, 243, 234);
+    background-color: rgb(0, 25, 87);
+    font-size: medium;
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+}
+
+.navbar .logochild {
+    font-size: large;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logochild img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.navbar .left a {
+    text-decoration: none;
+    color: rgb(248, 243, 234);
+    margin-left: 60px;
+}
+
+.navbar .left a:hover {
+    color: rgb(248, 243, 234);
+    transform: scale(1.1);
+    transition: transform 1s ease, color 1s ease;
+}
+
+.navbar .right img {
+    margin-left: 10px;
+}
+
+.navbar .rightest img {
+    margin-right: 10px;
+}
+
+.navbar .rightest {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-container {
+    margin: 40px auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.linkedin-layout {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-left {
+    flex: 2;
+}
+
+.profile-right {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.profile-right h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: rgb(0, 25, 87);
+}
+
+.profile-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-right ul li {
+    padding: 15px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(209, 232, 255);
+    margin-right: 20px;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: gray;
+    font-size: 18px;
+}
+
+.about-us {
+    margin-top: 20px;
+}
+
+.about-us h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-us .about-text {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    min-height: 120px;
+}
+
+.filler-section {
+    margin-top: 30px;
+}
+
+.filler-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.filler-section p {
+    font-size: 16px;
+    color: gray;
+    line-height: 1.8;
+}
+
+.quick-links a {
+    color: rgb(0, 25, 87);
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    color: #005c8a;
+}

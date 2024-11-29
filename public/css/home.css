@@ -111,6 +111,12 @@ body {
     width: 35px;
 }
 
+.job_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .rightend {
     display: flex;
     justify-content: space-between;
