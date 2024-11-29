@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $employer_id = $employer->insertEmployer();
     $_SESSION["employer_id"] = $employer_id;
     $_SESSION["company_name"] = $company_name;
-    header("Location: ../views/home.html");
+    header("Location: ../controllers/home.php");
     exit();
 }
 ?>

@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $job_seeker_id = $job_seeker->insertJob_Seeker();
         $_SESSION["job_seeker_id"] = $job_seeker_id;
 
-        header("Location: ../views/home.html");
+        header("Location: ../controllers/home.php");
         exit();
     } catch (Exception $e) {
         echo "Error: " . $e->getMessage();
