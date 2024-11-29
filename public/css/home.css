@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(209, 232, 255);
+    background-color: white;
 }
 
 .header {
@@ -52,6 +52,7 @@ body {
 }
 
 .filters {
+    margin-top: 50px;
     width: 20%;
     padding: 20px;
     background-color: #f9fafb;
@@ -103,61 +104,6 @@ body {
     font-size: 18px;
     font-weight: 600;
     padding: 0 10px;
-}
-
-.job-listings {
-    width: 75%;
-}
-
-.job-listings h2 {
-    margin-bottom: 20px;
-}
-
-.job-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.job-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.job-card .job-date {
-    color: #888;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.job-card h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.job-card p {
-    margin-bottom: 15px;
-}
-
-.job-details {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.job-card button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.job-card button:hover {
-    background-color: rgb(0, 25, 87);
 }
 
 .icon {

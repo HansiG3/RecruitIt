@@ -32,6 +32,7 @@ html {
     font-size: 13px;
     z-index: 1;
     position: fixed;
+    background-color: rgb(209, 232, 255);
 }
 
 .logo_title_links {
