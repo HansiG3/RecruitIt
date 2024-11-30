@@ -28,7 +28,7 @@
 .main_background {
     width: 100vw;
     height: 100vh;
-    background-color: var(--light-gray-color);
+    background-color: var(--white-color);
 }
 
 .main_content {

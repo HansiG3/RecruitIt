@@ -2,13 +2,6 @@ create database recruitit;
 
 use recruitit;
 
-create table admin (
-	admin_id int primary key auto_increment,
-    username varchar(100),
-    email varchar(100) unique,
-    password varchar(255)
-);
-
 create table user (
 	user_id int primary key auto_increment,
     username varchar(100),
@@ -61,8 +54,6 @@ create table application (
 );
 
 show tables;
-
-describe admin;
 
 describe application;
 
