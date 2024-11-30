@@ -65,7 +65,7 @@ include "../views/navigation.html";
 					$title .
 					'</h2>
 							</div>
-							<img src="../../public/images/'. $_SESSION["company_name"] .'.svg" alt="Amazon Logo" class="company-logo" />
+							<img src="../../public/images/amazon.svg" alt="Amazon Logo" class="company-logo" />
 						</div>
 						<div class="job-tags">
 							<span>' .

@@ -2,10 +2,10 @@ body {
 	padding: 0px;
 	margin: 0px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: rgb(209, 232, 255);
 }
 
 .mainbody {
-	background-color: rgb(209, 232, 255);
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -63,6 +63,7 @@ body {
 	border-radius: 10px;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 	width: 400px;
+	margin-top: 75px;
 }
 
 .form-container h2 {
